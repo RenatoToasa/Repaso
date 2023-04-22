@@ -38,5 +38,24 @@ namespace Repaso
         {
             Navigation.PushAsync(new Registro());
         }
+
+        private void txtdato_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                double numero =Convert.ToDouble(txtdato.Text);
+                //1-10
+                if (numero < 1 && numero > 10) {
+                    DisplayAlert("Mensaje", "El rango permitido es 1 -10", "Cerrar");
+                    txtdato.Text = "";
+                
+                }
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("ERROR", ex.Message, "cerrar");
+               
+            }
+        }
     }
 }

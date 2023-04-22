@@ -8,6 +8,7 @@
 
                 <Label Text="Ventana de Inicio" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
                 <Image Source="loginImage.jpg" WidthRequest="100" HeightRequest="100"/>
+                <Entry x:Name="txtdato" Placeholder="Dato" MaxLength="5" TextChanged="txtdato_TextChanged"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
